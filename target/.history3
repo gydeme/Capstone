@@ -1,0 +1,31 @@
+1722311927632:object DumpParserTest {\n  def main(args: Array[String]): Unit = {\n    val testFilePath = "/path/to/small_categorylinks.sql.bz2"\n    val outputFilePath = "/path/to/output/directory"\n    val dumpParser = new DumpParser\n\n    val spark = SparkSession.builder()\n      .appName("Wikipedia dump parser test")\n      .master("local[*]")\n      .getOrCreate()\n\n    val df = dumpParser.processFileToDf[WikipediaCategoryLink](spark, testFilePath, WikipediaDumpType.CategoryLinks)\n    df.show(10)\n\n    // Write the DataFrame to the output directory\n    df.write.mode("overwrite").csv(outputFilePath)\n  }\n}
+1722312249542:compile
+1722312563312:compil
+1722312565273:compile
+1722312569180:test
+1722312624721:compil
+1722312626518:compile
+1722312631842:update
+1722312636541:compile
+1722312640890:test
+1722312689609:update
+1722312693050:compile
+1722312811146:update
+1722312813253:compile
+1722313023674:update
+1722313030454:compile
+1722313034510:test
+1722313175459:update
+1722313178501:compile
+1722313181195:test
+1722313508390:update
+1722313511392:compile
+1722313513695:test
+1722313526919:compile
+1722313638666:update
+1722313640954:compile
+1722313649375:test
+1722313882829:libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.9" % Test
+1722314415238:update
+1722314418529:compile
+1722314420854:test

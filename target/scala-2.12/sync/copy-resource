@@ -1,0 +1,1 @@
+[[{"${BASE}/src/main/resources/log4j.properties":["${BASE}/target/scala-2.12/classes/log4j.properties"]},{"${BASE}/target/scala-2.12/classes/log4j.properties":["${BASE}/src/main/resources/log4j.properties"]}],{"${BASE}/src/main/resources/log4j.properties":{"file":"file:///home/gyde/Documents/sparkwiki/src/main/resources/log4j.properties","lastModified":1722662705140}}]
