@@ -1,32 +1,38 @@
 #!/bin/sh
+
+# Delimiter and data directory
 delim="\t"
 data_dir="/home/gyde/Documents/sparkwiki/outputs"
 
-# Collect the actual file paths for each type of data
-normal_pages=$(ls $data_dir/page/normal_pages/part-*.csv | tr '\n' ',')
-category_pages=$(ls $data_dir/page/category_pages/part-*.csv | tr '\n' ',')
-pagelinks=$(ls $data_dir/pagelinks/part-*.csv | tr '\n' ',')
-categorylinks=$(ls $data_dir/categorylinks/part-*.csv | tr '\n' ',')
+# Paths to filtered data files
+normal_pages=$(ls $data_dir/page/filt_normal_pages/*.csv.gz | tr '\n' ',')
+category_pages=$(ls $data_dir/page/filt_category_pages/*.csv.gz | tr '\n' ',')
+pagelinks=$(ls $data_dir/filt_pagelinks/*.csv.gz | tr '\n' ',')
+categorylinks=$(ls $data_dir/filt_categorylinks/*.csv.gz | tr '\n' ',')
 
-# Remove trailing commas from the lists
+# Remove trailing commas from file lists
 normal_pages=${normal_pages%,}
 category_pages=${category_pages%,}
 pagelinks=${pagelinks%,}
 categorylinks=${categorylinks%,}
 
-# Check if any file list is empty and report missing files
-if [ -z "$normal_pages" ]; then echo "Normal pages CSV files not found."; exit 1; fi
-if [ -z "$category_pages" ]; then echo "Category pages CSV files not found."; exit 1; fi
-if [ -z "$pagelinks" ]; then echo "PageLinks CSV files not found."; exit 1; fi
-if [ -z "$categorylinks" ]; then echo "CategoryLinks CSV files not found."; exit 1; fi
+# Header files
+normal_pages_header="page_header.csv"
+category_pages_header="page_header.csv"
+pagelinks_header="pagelinks_header.csv"
+categorylinks_header="categorylinks_header.csv"
 
-# Neo4j import command using actual file paths
-neo4j-admin database import full \
-    --delimiter=$delim \
+# Run the Neo4j import command
+neo4j-admin database import full neo4j \
+    --delimiter="${delim}" \
     --report-file=/tmp/import-wiki.log \
     --id-type=INTEGER \
-    --nodes=Page=page_header.csv,"$normal_pages" \
-    --nodes=Page:Category=page_header.csv,"$category_pages" \
-    --relationships=LINKS_TO=pagelinks_header.csv,"$pagelinks" \
-    --relationships=BELONGS_TO=categorylinks_header.csv,"$categorylinks"
+    --nodes=Page="${normal_pages_header},${normal_pages}" \
+    --nodes=Page:Category="${category_pages_header},${category_pages}" \
+    --relationships=LINKS_TO="${pagelinks_header},${pagelinks}" \
+    --relationships=BELONGS_TO="${categorylinks_header},${categorylinks}" \
+    --skip-bad-relationships=true \
+    --bad-tolerance=50000 \
+    --verbose \
+    --overwrite-destination=true
 

@@ -4,7 +4,7 @@ This deployment tutorial is for Linux users. If you want to know how to deploy t
 
 ## 1. Set up the environment
 
-1. Install JDK. **Open JDK 8** recommended.
+1. Install JDK. **Open JDK 17** recommended.
 2. Install **SBT** (Scala Build Tool)
     * [Linux installation details](https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Linux.html)
     * [MacOS installation details](https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Mac.html)
@@ -57,35 +57,26 @@ Now, everything is ready and you can pre-process the files. Note that you can us
 To pre-process the dumps we will need to run `spark-submit` command in the following format:
 
 ```
-spark-submit 
---class ch.epfl.lts2.wikipedia.DumpProcessor 
---master 'local[*]' 
---executor-memory [amount of RAM allocated for executor (30% of available RAM)] 
---driver-memory [amount of RAM allocated for driver (40% of available RAM)]
---packages  org.rogach:scallop_2.11:4.0.1
-            [path to the *.jar file that we have build in the first section] 
---dumpPath [path to raw SQL dumps]
---outputPath [output path] 
---namePrefix enwiki-[YYYYMMDD]
+spark-submit \
+--class ch.epfl.lts2.wikipedia.DumpProcessor \
+--master 'local[*]' \
+--executor-memory 20g \
+--driver-memory 24g \
+--packages org.rogach:scallop_2.12:4.1.0 \
+/home/gyde/Documents/sparkwiki/target/scala-2.12/sparkwiki_2.12-1.0.0.jar \
+--dumpPath /home/gyde/Documents/bzsets/20020620 \
+--outputPath /home/gyde/Documents/sparkwiki/outputs \
+--namePrefix enwiki-20240620
 ```
 
-Example:
-
-```
-spark-submit --class ch.epfl.lts2.wikipedia.DumpProcessor --master 'local[*]' --executor-memory 4g --driver-memory 4g --packages org.rogach:scallop_2.11:4.0.1 sparkwiki/target/scala-2.11/sparkwiki_2.11-0.13.0.jar --dumpPath /mnt/data/Datasets/wikipedia/dumps --outputPath /mnt/data/wikipedia/dumps-pre-processed/  --namePrefix enwiki-20180801
-```
 
 After running this command you will see Spark logs in the terminal. After some time (around 30 minutes), you will have pre-processed SQL dumps stored in `/mnt/data/wikipedia/dumps-pre-processed/`.
 
 ### 3.2 Create wikipedia.db database
-The default database in Neo4J is `graph.db`. We will need to create another database and call it `wikipedia.db`.  To do that we will need to change the config file. Open `/etc/neo4j/neo4j.conf` and edit+uncomment the following line:
-
-`dbms.active_database=wikipedia.db`
-
-After that, once you restart Neo4J service, `wikipedia.db` database will be created.
+The default database in Neo4J is `graph.db` which defaults to a database named 'neo4j'
 
 ### 3.3 Start/Stop Neo4J
-Start/Stop Neo4J service to initialize the `wikipedia.db`.
+Start/Stop Neo4J service to initialize the `neo4j.db`.
 
 `sudo neo4j start`
 
@@ -96,23 +87,44 @@ Start/Stop Neo4J service to initialize the `wikipedia.db`.
 
 **Note2:** You can find header files in the `import` folder, which is located [here](https://github.com/epfl-lts2/sparkwiki/tree/master/helpers/import). **Before running this script, put it in the same folder with the `import` folder.**
 
-* Run the script below to import the pre-processed files into Neo4J. This step takes quite some time depending on your hardware (the amount of RAM and the type of the storage). For example, on a computer with 32 GB of RAM and an SSD (free space of around 10 GB required), it should take less than 30 minutes.
+* First we must get rid of nodes that have missing relationships. To do this open the filterbadnodes.py file and adjust the file locations within the file. It will take your processed dump files and filter them for bad relationships. At the end you should have 'filt' dumps alongside the other dumps. 
 
+* Run the script below to import the pre-processed *and filtered* files into Neo4J. This step takes quite some time depending on your hardware (the amount of RAM and the type of the storage). For example, on a computer with 32 GB of RAM and an SSD (free space of around 10 GB required), it should take less than 30 minutes.
+
+run the .sh file located in the helpers/import folder. The command looks like this and will need destinations updated:
 ```
-#! /bin/sh
-target_db="wikipedia.db"
+#!/bin/sh
 delim="\t"
-data_dir=/mnt/data/Datasets/wikipedia/dumps-pre-processed
-part_template="part-\d{5}-.*.csv.gz"
-neo4j-admin import \
-    --database=$target_db --delimiter=$delim \
+data_dir="/home/gyde/Documents/sparkwiki/outputs"
+
+# Collect the actual file paths for each type of data
+normal_pages=$(ls $data_dir/page/normal_pages/part-*.csv.gz | tr '\n' ',')
+category_pages=$(ls $data_dir/page/category_pages/part-*.csv.gz | tr '\n' ',')
+pagelinks=$(ls $data_dir/pagelinks/part-*.csv.gz | tr '\n' ',')
+categorylinks=$(ls $data_dir/categorylinks/part-*.csv.gz | tr '\n' ',')
+
+# Remove trailing commas from the lists
+normal_pages=${normal_pages%,}
+category_pages=${category_pages%,}
+pagelinks=${pagelinks%,}
+categorylinks=${categorylinks%,}
+
+# Check if any file list is empty and report missing files
+if [ -z "$normal_pages" ]; then echo "Normal pages CSV files not found."; exit 1; fi
+if [ -z "$category_pages" ]; then echo "Category pages CSV files not found."; exit 1; fi
+if [ -z "$pagelinks" ]; then echo "PageLinks CSV files not found."; exit 1; fi
+if [ -z "$categorylinks" ]; then echo "CategoryLinks CSV files not found."; exit 1; fi
+
+sudo neo4j-admin database import full \
+    --delimiter="\t" \
     --report-file=/tmp/import-wiki.log \
     --id-type=INTEGER \
-    --nodes:Page import/page_header.csv,"$data_dir/page/normal_pages/$part_template" \
-    --nodes:Page:Category import/page_header.csv,"$data_dir/page/category_pages/$part_template" \
-    --relationships:LINKS_TO import/pagelinks_header.csv,"$data_dir/pagelinks/$part_template" \
-    --relationships:BELONGS_TO import/categorylinks_header.csv,"$data_dir/categorylinks/$part_template" \
-    --ignore-missing-nodes
+    --nodes=Page=page_header.csv,"/home/gyde/Documents/sparkwiki/outputs/page/filt_normal_pages/*.csv.gz" \
+    --nodes=Page:Category=page_header.csv,"/home/gyde/Documents/sparkwiki/outputs/page/filt_category_pages/*.csv.gz" \
+    --relationships=LINKS_TO=pagelinks_header.csv,"/home/gyde/Documents/sparkwiki/outputs/filt_pagelinks/*.csv.gz" \
+    --relationships=BELONGS_TO=categorylinks_header.csv,"/home/gyde/Documents/sparkwiki/outputs/filt_categorylinks/*.csv.gz" \
+    --verbose \
+    --overwrite-destination
 
 ```
 
@@ -124,16 +136,20 @@ neo4j-admin import \
 
 * Create indexes for PAGE_ID and PAGE_TITLE.
 ```
-CREATE INDEX ON :Page(id)
-CREATE INDEX ON :Page(title)
+CREATE INDEX IF NOT EXISTS FOR (p:Page) ON (p.id);
+CREATE INDEX IF NOT EXISTS FOR (p:Page) ON (p.title);
 ```
 * Check the indexes are complete.
 ```
-CALL db.indexes()
+SHOW INDEXES;
 ```
 * Test some queries.
 Example: 
-`MATCH (p)-[:BELONGS_TO*1..2]->(c:Category { title: 'Physics'}) WITH DISTINCT p AS p1 RETURN p1.id, p1.title, labels(p1);`
+```
+MATCH (p:Page)-[:BELONGS_TO*1..2]->(c:Category {title: 'Physics'}) 
+WITH DISTINCT p AS p1 
+RETURN p1.id, p1.title, labels(p1);
+```
 
 The graph is ready. If you don't need pagecounts, you are good to go. Otherwise, keep following the instructions and pre-process the pagecounts.
 

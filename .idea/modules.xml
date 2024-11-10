@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkWiki.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkWiki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkWiki.SparkWiki-build.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkWiki.SparkWiki-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/modules/documents.iml" filepath="$PROJECT_DIR$/../.idea/modules/documents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/modules/documents.documents-build.iml" filepath="$PROJECT_DIR$/../.idea/modules/documents.documents-build.iml" />
+    </modules>
+  </component>
+</project>

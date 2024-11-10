@@ -25,7 +25,7 @@ class DumpProcessor extends Serializable {
 //    .set("spark.executor.memory", "20g")
 //    .set("spark.driver.memory", "20g")
 //    //.set("spark.sql.shuffle.partitions", "2000")
-//    .setMaster("local[*]")  // Set the master URL explicitly
+      .setMaster("local[*]")  // Set the master URL explicitly
   lazy val session: SparkSession = SparkSession.builder.config(sconf).getOrCreate()
 
   // Import session implicits to bring in the encoders
@@ -243,13 +243,17 @@ object DumpProcessor {
     val redirect_id = dp.mergeRedirect(pageDf, redirectDf, outputFilePath)
     val pglinks_noredirect = dp.resolvePageRedirects(pagelinks_id, redirect_id, normal_pages.union(cat_pages), outputFilePath)
 
-    // Writing the output datasets to the respective output paths
-    dumpParser.writeCsv(pglinks_noredirect, pageLinksOutput)
     val catlinks_id = dp.mergeCategoryLinks(pageDf, cat_pages, categoryLinksDf, outputFilePath)
     //dumpParser.writeCsv(pagelinks_id.toDF, pageLinksOutput)
-    //dumpParser.writeCsv(redirect_id.toDF, redirectOutput)
+
+
+
+
+    // Writing the output datasets to the respective output paths
+    dumpParser.writeCsv(pglinks_noredirect, pageLinksOutput)
     dumpParser.writeCsv(catlinks_id.toDF, categoryLinksOutput)
     dumpParser.writeCsv(cat_pages.toDF, pageOutput.resolve("category_pages").toString)
     dumpParser.writeCsv(normal_pages.toDF, pageOutput.resolve("normal_pages").toString)
+
   }
 }

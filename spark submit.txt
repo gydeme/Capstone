@@ -1,0 +1,10 @@
+spark-submit \
+--class ch.epfl.lts2.wikipedia.DumpProcessor \
+--master 'local[*]' \
+--executor-memory 20g \
+--driver-memory 24g \
+--packages org.rogach:scallop_2.12:4.1.0 \
+/home/gyde/Documents/sparkwiki/target/scala-2.12/sparkwiki_2.12-1.0.0.jar \
+--dumpPath /home/gyde/Documents/bzsets/20020620 \
+--outputPath /home/gyde/Documents/sparkwiki/outputs \
+--namePrefix enwiki-20240620

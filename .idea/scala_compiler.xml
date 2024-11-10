@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="false" />
+    <profile name="sbt 1" modules="documents,sparkwiki_6691,sparkwiki_8108" />
+    <profile name="sbt 2" modules="SparkWiki">
+      <option name="deprecationWarnings" value="true" />
+    </profile>
+  </component>
+</project>

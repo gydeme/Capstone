@@ -10,11 +10,11 @@ trait CsvWriter {
        df
      }
      val sampleDataset = df.limit(10)
-    df_tmp.write.option("delimiter", "\t")
-            .option("header", writeHeader)
-            .option("quote", "")
-            .option("compression", "gzip")
-            .mode(mode)
-            .csv(outputPath)
+     df_tmp.write.option("delimiter", "\t")
+       .option("header", writeHeader)
+       .option("quote", "")
+       .option("compression", "gzip")
+       .mode(mode)
+       .csv(outputPath)
   }
 }

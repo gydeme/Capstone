@@ -1,2 +1,2 @@
-id:ID(Page),title,isRedirect:BOOLEAN,isNew:BOOLEAN
+id:ID	title	isRedirect:BOOLEAN	isNew:BOOLEAN
 
