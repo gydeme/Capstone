@@ -158,16 +158,16 @@ The graph is ready. If you don't need pagecounts, you are good to go. Otherwise,
 Use `ch.epfl.lts2.wikipedia.DumpParser` to get `.parquet` files for the `page.sql` dumps. To do this, run a command in the following format:
 
 ```
-spark-submit 
---class ch.epfl.lts2.wikipedia.DumpParser 
---master 'local[*]' 
---executor-memory 10g 
---driver-memory 10g 
---packages    org.rogach:scallop_2.11:4.0.1
-              <SPARKWIKI LOCATION>/sparkwiki/target/scala-2.11/sparkwiki_<VERSION>.jar 
---dumpFilePaths <PATH TO THE DUMPS, e.g. ~/data/dumps/enwiki-20190901-page.sql.bz2>
---dumpType page 
---outputPath /mnt/data/wikipedia/page.parquet 
+spark-submit \
+--class ch.epfl.lts2.wikipedia.DumpParser \
+--master 'local[*]' \
+--executor-memory 20g \
+--driver-memory 24g \
+--packages org.rogach:scallop_2.12:4.1.0 \
+/home/gyde/Documents/sparkwiki/target/scala-2.12/sparkwiki_2.12-1.0.0.jar \
+--dumpFilePaths /home/gyde/Documents/bzsets/20240620/enwiki-20240620-page.sql.bz2 \
+--dumpType page \
+--outputPath /home/gyde/Documents/sparkwiki/outputs/page.parquet \
 --outputFormat parquet
 ```
 ### 4.1 Output as parquet files
