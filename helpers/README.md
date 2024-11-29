@@ -175,21 +175,20 @@ spark-submit \
 Now, you can filter the pagecounts. You can choose the dates and languages of interest using `ch.epfl.lts2.wikipedia.PagecountProcessor`.
 
 ```
-spark-submit 
---class ch.epfl.lts2.wikipedia.PagecountProcessor 
---master 'local[*]' 
---executor-memory 10g 
---driver-memory 10g 
---packages     org.rogach:scallop_2.11:4.0.1,
-               com.typesafe:config:1.4.1
-               <SPARKWIKI LOCATION>/sparkwiki/target/scala-2.11/sparkwiki_2.11-<VERSION>.jar
---config <SPARKWIKI LOCATION>/sparkwiki/config/pagecount.conf
---basePath <DATA PATH>/pagecounts/2018/2018-08
---startDate 2018-08-01
---endDate 2018-08-31
---pageDump <PATH TO PRE-PROCESSED FILES FROM ch.epfl.lts2.wikipedia.DumpParser>/page.parquet 
---languages <LIST OF LANGUAGE CODES>
---outputPath <OUTPUT DIRECTORY>/pagecount.parquet 
+spark-submit \
+--class ch.epfl.lts2.wikipedia.PagecountProcessor \
+--master 'local[*]' \
+--executor-memory 20g \
+--driver-memory 24g \
+--packages org.rogach:scallop_2.12:4.1.0,com.typesafe:config:1.4.1 \
+/home/gyde/Documents/sparkwiki/target/scala-2.12/sparkwiki_2.12-1.0.0.jar \
+--config /home/gyde/Documents/sparkwiki/config/pagecount.conf \
+--basePath /home/gyde/Documents/bzsets-pageviews/2024-06 \
+--startDate 2024-06-01 \
+--endDate 2024-06-30 \
+--pageDump /home/gyde/Documents/sparkwiki/outputs/page.parquet \
+--languages en \
+--outputPath /home/gyde/Documents/pagecountout/2024-06/pagecount.parquet
 ```
 
 For more information on the parameters check out the [README](https://github.com/epfl-lts2/sparkwiki/blob/master/README.md#pagecount-processor).
@@ -200,7 +199,7 @@ Now, you can use `.parquet` files stored in `--outputPath`, if you want to use t
 #### 4.2.1 Deploy the pagecounts database
 NB: These operations need to be one only **once** to set up the output database.
 * Start Apache Cassandra
-`sudo service cassandra start`
+`cassandra -f`
 
 * Check IP of your Cassandra node
 `nodetool status`
@@ -241,21 +240,19 @@ CREATE TABLE wikipedia.pagecount_metadata (
 Now, you can filter the pagecounts. You can choose the dates and languages of interest using `ch.epfl.lts2.wikipedia.PagecountProcessor`.
 
 ```
-spark-submit 
---class ch.epfl.lts2.wikipedia.PagecountProcessor 
---master 'local[*]' 
---executor-memory 10g 
---driver-memory 10g 
---packages     org.rogach:scallop_2.11:4.0.1,
-               com.datastax.spark:spark-cassandra-connector_2.11:2.4.2,
-               com.typesafe:config:1.4.1
-               <SPARKWIKI LOCATION>/sparkwiki/target/scala-2.11/sparkwiki_2.11-<VERSION>.jar
---config <SPARKWIKI LOCATION>/sparkwiki/config/pagecount.conf
---basePath <DATA PATH>/pagecounts/2018/2018-08
---startDate 2018-08-01
---endDate 2018-08-31
---pageDump <PATH TO PRE-PROCESSED FILES FROM ch.epfl.lts2.wikipedia.DumpParser>/page.parquet 
---languages <LIST OF LANGUAGE CODES>
+spark-submit \
+--class ch.epfl.lts2.wikipedia.PagecountProcessor \
+--master 'local[*]' \
+--executor-memory 20g \
+--driver-memory 24g \
+--packages org.rogach:scallop_2.12:4.1.0,com.typesafe:config:1.4.1,com.datastax.spark:spark-cassandra-connector_2.12:3.3.0 \
+/home/gyde/Documents/sparkwiki/target/scala-2.12/sparkwiki_2.12-1.0.0.jar \
+--config /home/gyde/Documents/sparkwiki/config/pagecount.conf \
+--basePath /home/gyde/Documents/bzsets-pageviews/2024-06 \
+--startDate 2024-06-01 \
+--endDate 2024-06-30 \
+--pageDump /home/gyde/Documents/sparkwiki/outputs/page.parquet \
+--languages en
 ```
 
 The database connection information must be set in the `pagecount.conf` configuration file.
