@@ -255,6 +255,12 @@ spark-submit \
 --languages en
 ```
 
+During this process you may run into timeout errors. If this is your case you should open the cassandra.yaml file and adjust settings. Ones relevant
+to my import were:
+   concurrent_writes: Set it to (8 * number_of_cores) 
+   read_request_timeout: 10000ms
+   write_request_timeout: 5000ms
+
 The database connection information must be set in the `pagecount.conf` configuration file.
 For more information on the parameters check out the [README](https://github.com/epfl-lts2/sparkwiki/blob/master/README.md#pagecount-processor).
 The `--outputPath` option must not be set, otherwise `sparkwiki` will revert to parquet output.
