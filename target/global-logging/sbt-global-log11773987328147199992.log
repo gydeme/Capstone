@@ -1,0 +1,16 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.10.1 (OpenLogic-OpenJDK Java 17.0.12)
+[debug] Load.defaultLoad until apply took 213.647793ms
+[debug]           Load.loadUnit: plugins took 154.322045ms
+[debug]           Load.loadUnit: defsScala took 0.893107ms
+[debug] [Loading] Scanning directory /home/gyde/Documents/sparkwiki/project
+[debug]             Load.loadUnit: mkEval took 26.614976ms

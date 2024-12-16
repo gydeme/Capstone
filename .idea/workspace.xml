@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e97f488-f5ea-4bc3-b838-dd57b2c50057" name="Changes" comment="added logging to try and track what is happening with pagelinks and categorylinks">
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/.bsp/sbt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/output/pagelinks/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/output/pagelinks/.part-00000-2f6a763a-b443-4344-81e5-4cf72616632d-c000.csv.gz.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/output/pagelinks/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/output/pagelinks/part-00000-2f6a763a-b443-4344-81e5-4cf72616632d-c000.csv.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/outputs/pagelinks/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/outputs/pagelinks/.part-00000-08c6917f-3c15-4aa2-b6d8-feed1c860334-c000.csv.gz.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/outputs/pagelinks/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/outputs/pagelinks/part-00000-08c6917f-3c15-4aa2-b6d8-feed1c860334-c000.csv.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/schemacheck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/test/scala/ch/epfl/lts2/wikipedia/.bsp/sbt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/test/scala/ch/epfl/lts2/wikipedia/DumpParserTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/test/scala/ch/epfl/lts2/wikipedia/TestDataReal.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/updates.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/import/neo4j_3.5.35_all.deb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/neo4jheaderimport.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apiguardian_apiguardian_api_1_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_neo4j_driver_neo4j_java_driver_4_4_18_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_neo4j_neo4j_connector_apache_spark_2_12_5_3_2_for_spark_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_neo4j_neo4j_connector_apache_spark_2_12_common_5_3_2_for_spark_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_neo4j_neo4j_cypher_dsl_2022_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/categorylinks/._SUCCESS.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/.part-00000-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/.part-00001-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/.part-00002-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz.crc" afterDir="false" />
@@ -59,6 +48,7 @@
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/.part-00034-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/.part-00035-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/.part-00036-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/categorylinks/_SUCCESS" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/part-00000-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/part-00000-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/categorylinks/part-00001-b3ba6e28-f18b-42da-b62d-3ba5979ef0b3-c000.csv.gz" afterDir="false" />
@@ -335,6 +325,109 @@
       <change afterPath="$PROJECT_DIR$/outputs/filt_pagelinks/filtered_pagelinks_97.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/filt_pagelinks/filtered_pagelinks_98.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/filt_pagelinks/filtered_pagelinks_99.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00000-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00001-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00002-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00003-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00004-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00005-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00006-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00007-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00008-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00009-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00010-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00011-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00012-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00013-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00014-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00015-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00016-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00017-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00018-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00019-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00020-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00021-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00022-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00023-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00024-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00025-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00026-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00027-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00028-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00029-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00030-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00031-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00032-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00033-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00034-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00035-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00036-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00037-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00038-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00039-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00040-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00041-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00042-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00043-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00044-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00045-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00046-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00047-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00048-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/.part-00049-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00000-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00001-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00002-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00003-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00004-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00005-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00006-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00007-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00008-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00009-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00010-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00011-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00012-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00013-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00014-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00015-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00016-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00017-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00018-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00019-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00020-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00021-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00022-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00023-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00024-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00025-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00026-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00027-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00028-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00029-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00030-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00031-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00032-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00033-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00034-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00035-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00036-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00037-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00038-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00039-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00040-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00041-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00042-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00043-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00044-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00045-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00046-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00047-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00048-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page.parquet/part-00049-e28cb553-4051-401f-99be-c8166ead1258-c000.gz.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/._SUCCESS.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/.part-00000-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/.part-00001-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/.part-00002-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz.crc" afterDir="false" />
@@ -385,6 +478,7 @@
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/.part-00047-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/.part-00048-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/.part-00049-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/_SUCCESS" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/part-00000-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/part-00001-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/category_pages/part-00002-38addd86-1ee0-4204-9bf3-61436a54dd8a-c000.csv.gz" afterDir="false" />
@@ -538,6 +632,7 @@
       <change afterPath="$PROJECT_DIR$/outputs/page/filt_normal_pages/filtered_normal_pages_7.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/filt_normal_pages/filtered_normal_pages_8.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/filt_normal_pages/filtered_normal_pages_9.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/._SUCCESS.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/.part-00000-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/.part-00001-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/.part-00002-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz.crc" afterDir="false" />
@@ -588,6 +683,7 @@
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/.part-00047-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/.part-00048-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/.part-00049-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/_SUCCESS" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/part-00000-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/part-00000-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/part-00001-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz" afterDir="false" />
@@ -639,6 +735,7 @@
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/part-00047-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/part-00048-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/page/normal_pages/part-00049-a8306a19-ac6c-48ba-9d68-30be80aaae56-c000.csv.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/pagelinks/._SUCCESS.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/.part-00000-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/.part-00001-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/.part-00002-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz.crc" afterDir="false" />
@@ -839,6 +936,7 @@
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/.part-00197-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/.part-00198-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz.crc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/.part-00199-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/pagelinks/_SUCCESS" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/part-00000-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/part-00000-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/part-00001-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz" afterDir="false" />
@@ -1040,69 +1138,609 @@
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/part-00197-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/part-00198-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/outputs/pagelinks/part-00199-7d3155e4-6a23-4913-a97a-a16cddb5eef4-c000.csv.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark submit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/categorylinks_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/categorylinks_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/page_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/page_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/pagelinks_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/pagelinks_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/redirect_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/helpers/import/redirect_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/project/Dependencies.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/project/Dependencies.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/project/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/spark_job.log" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/spark_job.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/ConfigFileOpt.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/ConfigFileOpt.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/CsvWriter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/CsvWriter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/DumpParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/DumpParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/DumpProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/DumpProcessor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/WikipediaElement.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/WikipediaElement.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/WikipediaElementParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../sparkwiki (Copy)/src/main/scala/ch/epfl/lts2/wikipedia/WikipediaElementParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/import/categorylinks_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/import/categorylinks_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/import/import-neo4j.sh" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/import/import-neo4j.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/import/page_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/import/page_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/import/pagelinks_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/import/pagelinks_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/import/redirect_header.csv" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/import/redirect_header.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$506129a6face9fbfec42$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$506129a6face9fbfec42.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$506129a6face9fbfec42.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$aaddfaa17cfa151bf6b4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$aaddfaa17cfa151bf6b4.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$aaddfaa17cfa151bf6b4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c059ededddf5dd569e52$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c059ededddf5dd569e52.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c059ededddf5dd569e52.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c05cdc626828588e5355$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c05cdc626828588e5355.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c05cdc626828588e5355.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/zinc/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/zinc/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/CsvWriter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/CsvWriter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/DumpParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/DumpParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/DumpProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/DumpProcessor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpParser$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpParser$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpParser$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpParser$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator1$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator11$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator11$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator16$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator21$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator21$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator5$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator5$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator5$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator5$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator6$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator6$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$$typecreator6$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythonProject/Python Files/clustercategorizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythonProject/Python Files/keywordExtractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythonProject/Python Files/pageviewDL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythonProject/Python Files/sparkneo4jtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-ea00fa6c-57c2-48bf-8af0-d56424977175-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00000-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-ea00fa6c-57c2-48bf-8af0-d56424977175-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00001-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-ea00fa6c-57c2-48bf-8af0-d56424977175-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00002-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-ea00fa6c-57c2-48bf-8af0-d56424977175-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/.part-00003-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00000-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00001-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00002-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-070a64f4-b9ae-4c37-810d-edd219530e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-07985dee-e36e-45b0-a8ad-f6e1ae3dcd04-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-0bd81bf2-a4f5-4314-848d-673b44285e8c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-20b3c14a-7fba-47be-9af5-4506bbb7275c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-2e963287-27ef-468c-9700-52c93ef89200-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-32dcf415-1100-4510-bb8b-9019419464c1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-3ac7dcbd-d27c-4013-a99c-ebd41bca1302-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-3cad568e-2898-4eb7-9a61-5e2bcbe6b3b4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-426ae823-ecb2-4e9a-b56d-4243330e523b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-4dc2fb23-4985-49b2-85a7-944a8759ae99-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-4e2c5af3-33e0-431a-a062-9732b5363c14-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-513cad29-2140-4332-81ff-7c63b4b6a717-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-5d58f579-c88e-491d-bf7f-0f512bfdd512-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-5ec93877-15b2-4b44-adb4-7acfc12934bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-60db9e97-2ace-45d5-9cf0-dcbcd4c9edf6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-6a1eb17b-2775-46cc-82ea-79cf31f5b932-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-6ea298df-19dd-4a0f-9cd4-2027b38be3d7-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-6ffba88f-2397-43a1-ab18-6d1ed295fe77-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-7bc441a8-0e29-427d-89e5-221091431654-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-878f163f-7698-470c-ad5b-0abb24641392-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-93565877-ef70-4c10-9b8f-9e47a23b23a8-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-9bdc5cc6-9861-4742-8b48-0b4e1869c331-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-b16361a8-799f-4b4f-afa2-11e50d9fa249-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-b45dd399-356b-49b2-ba56-3bb23b6cac39-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-c628fe4f-2b72-4091-8fa9-c53f1101e605-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-c9fa2f93-ae43-482b-9b62-8017acc9d206-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-d02b225d-043a-446b-bf3b-01073a7a9663-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-fa9bd074-87a2-4e4a-91c4-7647723f5aa4-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-fd10dd47-5a1b-4c27-82e8-2f4e352785b3-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/edges.parquet/part-00003-fd81742f-b647-4356-b759-e105f7e00d01-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/peaks_graph_20240601_20240605.gexf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/peaks_graph_20240601_20240615.gexf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/peaks_graph_20240616_20240630.gexf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/peaks_graph_20240701_20240715.gexf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-23a9e8a5-907a-45b0-ba11-f194ae8ea6cb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-55ff3674-7d84-41d1-864b-a8e3ed4d9fba-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-7fcc9147-7c08-4b29-bfe4-479148bf1cd6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-ad1ff1ce-b8fb-4303-b1bc-58c9c3111e3a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-b4549fc3-5dc4-44d9-b06d-1b12425acf58-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-cf8d5392-c182-4fb7-ae78-3435882d795c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-d9251b67-6670-4bd1-8bc8-84745f31e9b1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00000-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-23a9e8a5-907a-45b0-ba11-f194ae8ea6cb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00001-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-23a9e8a5-907a-45b0-ba11-f194ae8ea6cb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00002-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-23a9e8a5-907a-45b0-ba11-f194ae8ea6cb-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/.part-00003-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00000-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00001-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00002-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-04039937-5a46-4703-88c1-89899558c741-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-135e57f7-d7e0-4127-b417-1d8fb761d3aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-19107c1f-6b3d-4d2c-bd01-52ffd1a4273e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-1a7253e3-8935-4aef-8785-b294e0379b1d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-20fa07a4-7f15-4dde-9e5b-80dc6af2b6e0-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-3248e812-e3ff-44c7-9991-8c054bfb0432-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-39665f86-c4fd-4f71-b8da-867da111ce13-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-53500b6d-57b1-48d9-ac1d-d7c1d8a283bc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-5482276a-a4d7-409e-a7b8-ea2c643014b1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-5a521ea4-9619-41f7-8d0d-976418965c95-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-5f77c6d7-0b71-465b-acb4-4e262be7aa4d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-63b82a58-0296-499f-b4bb-781418424b8d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-6ca10c87-4608-4a12-930f-6768a9d79a9c-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-712b0caa-4096-4755-b27b-7c1328783f9e-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-73eb4e7e-7e0b-4f71-9a13-53bfc480dba1-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-7bc4e932-0871-4cbe-8df8-19e371d68788-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-9a8e8789-188c-477e-aecb-00eafb0765aa-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-9c07e450-e7b1-48a3-8702-b38c6a5678cc-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-a7659806-15ba-4f6d-b606-315b7fa4f301-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-ab66aa07-6227-4179-a8e4-ae0717454732-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-b73a5b78-5d99-4348-b18b-d82465871b3d-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-c188565a-3b43-4740-abdf-db012ed8625a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-c5531442-b1b4-4c1e-a3b8-9dcdc971815a-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-c88e4fd5-f87a-4cc5-86c3-0707354b6be6-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-d4ce31de-13fc-49cd-a41f-b49fc3788143-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-d7e4da3a-f357-4186-8006-177dc5087e47-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-dca931e8-071b-480e-870d-08517f2525d5-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-e4bd2de7-9dc6-4c6d-980b-a1371f439354-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-e6a86661-3c2c-4752-95a2-63099f4d66b2-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-ed5372f4-4c24-4b50-b694-27b31eb54561-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-ee4c951e-b055-4ee6-bc63-7abf2b5c2d5b-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/vertices.parquet/part-00003-f39adfe4-5c06-4b61-9024-106d409ae294-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/PeakFinderOG.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__graphframes_graphframes_0_8_0_spark3_0_s_2_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_github_resilience4j_resilience4j_core_1_2_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_github_resilience4j_resilience4j_retry_1_2_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_vavr_vavr_0_10_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__io_vavr_vavr_match_0_10_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__neo4j_contrib_neo4j_spark_connector_2_4_5_M2_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_xbean_xbean_asm6_shaded_4_10_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_neo4j_driver_neo4j_java_driver_4_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_16_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_18_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_16_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_18_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__scala_sdk_2_12_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__scala_sdk_2_12_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SparkWiki.SparkWiki-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SparkWiki.SparkWiki-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SparkWiki.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SparkWiki.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/pagecount.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/pagecount.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/pagestats.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/pagestats.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/peakfinder.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/peakfinder.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0fa0d6b9e3b5b05eeabc$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0fa0d6b9e3b5b05eeabc.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0fa0d6b9e3b5b05eeabc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9662d57b9417657f670a$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9662d57b9417657f670a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9662d57b9417657f670a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ae2de5ed4ebd959e5dcc$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ae2de5ed4ebd959e5dcc.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ae2de5ed4ebd959e5dcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$dc6332d0c2ba8ed76790$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$dc6332d0c2ba8ed76790.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$dc6332d0c2ba8ed76790.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/Python Files/HeaderExtractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/Python Files/HeaderExtractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark submit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark submit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/PeakFinder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/PeakFinder.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/DumpProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/ParserConf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/ParserConf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/ProcessorConf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/ProcessorConf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageRowThreshold$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageRowThreshold$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageRowThreshold.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageRowThreshold.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitElapsedGroup$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitElapsedGroup$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitElapsedGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitElapsedGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitGroup$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitGroup$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitThrGroup$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitThrGroup$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitThrGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageVisitThrGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator10$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator10$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator16$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator21$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator21$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator5$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator6$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator6$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator6$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinderConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinderConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/sparkwiki_2.12-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/sparkwiki_2.12-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/zinc/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/zinc/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
     </list>
@@ -1151,7 +1789,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/epfl-lts2/sparkwiki.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:gydeme/Capstone.git&quot;,
     &quot;accountId&quot;: &quot;86dbd1d8-8c88-416c-b8f2-9fcc98ee6f3d&quot;
   }
 }</component>
@@ -1174,13 +1812,19 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.2018sparks.executor&quot;: &quot;Debug&quot;,
     &quot;Application.2024Shorts.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PeakCounter.executor&quot;: &quot;Run&quot;,
     &quot;Application.SparkWikiShorts.executor&quot;: &quot;Debug&quot;,
     &quot;Application.SparkWikiSuperShorts.executor&quot;: &quot;Run&quot;,
+    &quot;Application.pagecounts2024.executor&quot;: &quot;Run&quot;,
     &quot;Application.sparkwiki2024.executor&quot;: &quot;Run&quot;,
     &quot;Application.sparkwikidebug.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spark Submit.2018sparks.executor&quot;: &quot;Run&quot;,
     &quot;Spark Submit.2024Sparks.executor&quot;: &quot;Run&quot;,
+    &quot;Spark Submit.PageCountProc.executor&quot;: &quot;Run&quot;,
+    &quot;Spark Submit.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/gyde/Documents/sparkwiki/target/scala-2.12/sparkwiki_2.12-1.0.0.jar&quot;,
@@ -1196,7 +1840,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.sparkwiki2024">
+  <component name="RunManager" selected="Application.PeakCounter">
     <configuration name="2018sparks" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <envs>
@@ -1225,6 +1869,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PeakCounter" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="SPARK_MASTER" value="local[*], executor-cores 4, num-executors 4, --packages org.rogach:scallop_2.12:4.1.0,com.typesafe:config:1.4.1,com.datastax.spark:spark-cassandra-connector_2.12:3.3.0,com.github.servicenow.stl4j:stl-decomp-4j:1.0.5,org.apache.commons:commons-math3:3.6.1,org.scalanlp:breeze_2.12:1.2 " />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.lts2.wikipedia.PeakFinder" />
+      <module name="SparkWiki" />
+      <option name="PROGRAM_PARAMETERS" value="--config $PROJECT_DIR$/config/peakfinder.conf --language en --outputPath $PROJECT_DIR$/results " />
+      <option name="VM_PARAMETERS" value="-Xms20g -Xmx24g -add-opens java.base/sun.nio.ch=ALL-UNNAMED " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SparkWikiSuperShorts" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -1236,6 +1894,20 @@
       <module name="SparkWiki" />
       <option name="PROGRAM_PARAMETERS" value="--dumpPath $PROJECT_DIR$/../bzsets/20240620/supershorts --outputPath $PROJECT_DIR$/outputs --namePrefix enwiki-20240620" />
       <option name="VM_PARAMETERS" value="-Xmx20g --add-opens java.base/sun.nio.ch=ALL-UNNAMED " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pagecounts2024" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="SPARK_MASTER" value="local[*], executor-cores 4, num-executors 4 " />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.lts2.wikipedia.PagecountProcessor" />
+      <module name="SparkWiki" />
+      <option name="PROGRAM_PARAMETERS" value="--pageDump $PROJECT_DIR$/outputs/page.parquet --startDate 2024-06-01 --endDate 2024-06-30 --basePath $PROJECT_DIR$/../bzsets-pageviews/2024-06 --config $PROJECT_DIR$/config/pagecount.conf --languages en" />
+      <option name="VM_PARAMETERS" value="-driver-memory 24g --executor-memory 20g --add-opens java.base/sun.nio.ch=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1438,13 +2110,108 @@
       </option>
       <method v="2" />
     </configuration>
+    <configuration name="PageCountProc" type="SparkSubmitConfigurationType" factoryName="SparkJobConfigurationType" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="archives">
+        <list />
+      </option>
+      <option name="artifactArgs" value="--pageDump $PROJECT_DIR$/outputs/page.parquet --startDate 2024-06-01 --endDate 2024-06-30 --basePath $PROJECT_DIR$/../bzsets-pageviews/2024-06 --config $PROJECT_DIR$/config/pagecount.conf --languages en" />
+      <option name="artifactPath">
+        <FilePath>
+          <option name="path" value="$PROJECT_DIR$/target/scala-2.12/sparkwiki_2.12-1.0.0.jar" />
+          <option name="type" value="file" />
+        </FilePath>
+      </option>
+      <option name="beforeShellScript" value="" />
+      <option name="className" value="ch.epfl.lts2.wikipedia.PagecountProcessor" />
+      <option name="clusterManager" value="LOCAL" />
+      <option name="clusterManagerDeployModeDefault" value="true" />
+      <option name="conf" value="" />
+      <option name="deployMode" value="CLIENT" />
+      <option name="driverClassPath">
+        <list />
+      </option>
+      <option name="driverCores" value="" />
+      <option name="driverJavaOptions" value="" />
+      <option name="driverLibraryPath">
+        <list />
+      </option>
+      <option name="driverMemory" value="20g" />
+      <option name="envParams" value="" />
+      <option name="excludePackages" value="" />
+      <option name="executorCores" value="" />
+      <option name="executorMemory" value="24g" />
+      <option name="files">
+        <list />
+      </option>
+      <option name="interactive" value="false" />
+      <option name="jars">
+        <list />
+      </option>
+      <option name="keytab">
+        <FilePath>
+          <option name="path" value="" />
+          <option name="type" value="file" />
+        </FilePath>
+      </option>
+      <option name="master" value="local" />
+      <option name="numExecutors" value="" />
+      <option name="packages" value="org.rogach:scallop_2.12:4.1.0,com.typesafe:config:1.4.1" />
+      <option name="principal" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="propertiesFile">
+        <FilePath>
+          <option name="path" value="" />
+          <option name="type" value="file" />
+        </FilePath>
+      </option>
+      <option name="proxyUser" value="" />
+      <option name="pyFiles">
+        <list />
+      </option>
+      <option name="pythonSdkPath" value="" />
+      <option name="queue" value="" />
+      <option name="repositories" value="" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="shellExecutor" value="/bin/bash" />
+      <option name="sparkHome" value="/opt/spark" />
+      <option name="sparkMonitoringDriverId" value="" />
+      <option name="supervise" value="false" />
+      <option name="totalExecutorCores" value="" />
+      <option name="verbose" value="false" />
+      <option name="visibleBlocks">
+        <map>
+          <entry key="SPARK_CONFIG" value="false" />
+          <entry key="DEPENDENCIES" value="true" />
+          <entry key="MAVEN_DEPENDENCIES" value="true" />
+          <entry key="DRIVER" value="true" />
+          <entry key="EXECUTOR" value="true" />
+          <entry key="KERBEROS" value="false" />
+          <entry key="INTEGRATION" value="false" />
+          <entry key="ADDITIONAL" value="false" />
+          <entry key="SHELL_OPTIONS" value="false" />
+        </map>
+      </option>
+      <option name="workDirectoryPath">
+        <FilePath>
+          <option name="path" value="" />
+          <option name="type" value="file" />
+        </FilePath>
+      </option>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.2018sparks" />
       <item itemvalue="Application.2024Shorts" />
+      <item itemvalue="Application.PeakCounter" />
       <item itemvalue="Application.SparkWikiSuperShorts" />
+      <item itemvalue="Application.pagecounts2024" />
       <item itemvalue="Application.sparkwiki2024" />
-      <item itemvalue="Spark Submit.2024Sparks" />
       <item itemvalue="Spark Submit.2018sparks" />
+      <item itemvalue="Spark Submit.2024Sparks" />
+      <item itemvalue="Spark Submit.PageCountProc" />
     </list>
   </component>
   <component name="ScalaProjectSettings">
@@ -1478,6 +2245,18 @@
       <workItem from="1730920898812" duration="819000" />
       <workItem from="1730929713616" duration="3258000" />
       <workItem from="1731128443130" duration="1228000" />
+      <workItem from="1731277962378" duration="2739000" />
+      <workItem from="1731353409451" duration="10866000" />
+      <workItem from="1732052709499" duration="10451000" />
+      <workItem from="1732567296341" duration="12640000" />
+      <workItem from="1733038378256" duration="6028000" />
+      <workItem from="1733286306214" duration="16756000" />
+      <workItem from="1733371491746" duration="952000" />
+      <workItem from="1733372977033" duration="304000" />
+      <workItem from="1733373300164" duration="13694000" />
+      <workItem from="1733520209742" duration="11164000" />
+      <workItem from="1733599835029" duration="74783000" />
+      <workItem from="1733937209693" duration="2819000" />
     </task>
     <task id="LOCAL-00001" summary="added logging to try and track what is happening with pagelinks and categorylinks">
       <option name="closed" value="true" />
@@ -1550,6 +2329,11 @@
           <url>file://$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/DumpParser.scala</url>
           <line>78</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/ch/epfl/lts2/wikipedia/DumpProcessor.scala</url>
+          <line>200</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalAccessError" package="java.lang" />

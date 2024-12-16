@@ -1,3 +1,10 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/home/gyde/Documents/sparkwiki/project/"), "sparkwiki-build")...
-[debug] Done updating ProjectRef(uri("file:/home/gyde/Documents/sparkwiki/project/"), "sparkwiki-build")
+[0m[[0m[33mwarn[0m] [0m[0msbteclipse-plugin.jar no longer exists at /home/gyde/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/5.2.4/jars/sbteclipse-plugin.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = false, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/home/gyde/Documents/sparkwiki/project/"), "sparkwiki-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating sparkwiki-build[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved sparkwiki-build dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating sparkwiki-build[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved sparkwiki-build dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of sparkwiki-build[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of sparkwiki-build[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/home/gyde/Documents/sparkwiki/project/"), "sparkwiki-build")[0m

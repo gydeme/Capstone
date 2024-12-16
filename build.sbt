@@ -2,8 +2,9 @@ import Dependencies._
 import sbtassembly.AssemblyPlugin.autoImport._
 
 ThisBuild / organization := "ch.epfl.lts2"
-ThisBuild / scalaVersion := "2.12.16"
+ThisBuild / scalaVersion := "2.12.18"
 ThisBuild / version := "1.0.0"
+
 
 lazy val root = (project in file("."))
   .settings(
@@ -16,7 +17,7 @@ lazy val root = (project in file("."))
     libraryDependencies += "org.rogach" %% "scallop" % "4.1.0", // Consolidated Scallop version
     libraryDependencies += "com.datastax.spark" %% "spark-cassandra-connector" % "3.5.1",
     libraryDependencies += "org.scalanlp" %% "breeze" % "2.0",
-    libraryDependencies += "neo4j-contrib" % "neo4j-spark-connector" % "2.4.5-M2",
+    libraryDependencies += "org.neo4j" % "neo4j-connector-apache-spark_2.12" % "5.3.2_for_spark_3",
     libraryDependencies += "org.apache.spark" %% "spark-graphx" % "3.5.1",
     libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "3.2.3",
     libraryDependencies += "com.google.guava" % "guava" % "31.1-jre",

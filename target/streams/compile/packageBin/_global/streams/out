@@ -128,6 +128,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PagecountProcessor$$typecreator1$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PagecountProcessor$$typecreator10$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PagecountProcessor$$typecreator10$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PeakFinder$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator1$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/WikipediaLangLink.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/WikipediaLangLink.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/ElementFilter.class[0m
@@ -160,8 +162,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/UnavailableVisitDataException.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PeakFinder$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PeakFinder$$typecreator10$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator10$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/WikipediaLinkTargetParser$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/WikipediaLinkTargetParser$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/MergedPageLink$.class[0m
@@ -216,8 +216,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/MergedPageLink.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PageCountStatsLoaderCassandra$$typecreator5$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PageCountStatsLoaderCassandra$$typecreator5$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/PeakFinder$$typecreator11$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/LinkTarget.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gyde/Documents/sparkwiki/target/scala-2.12/classes/ch/epfl/lts2/wikipedia/LinkTarget.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ch/epfl/lts2/wikipedia/PageCountStatsLoaderParquet$$typecreator5$6.class[0m

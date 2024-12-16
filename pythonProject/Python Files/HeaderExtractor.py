@@ -91,11 +91,11 @@ def print_schema_and_samples(file_path, dump_name, num_samples=10):
 
 # Paths to your dumps
 dumps = {
-    "2018 Pagelinks": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-pagelinks.sql.bz2',
-    "2018 Categorylinks": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-categorylinks.sql.bz2',
-    "2018 Page": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-page.sql.bz2',
-    "2018 Redirect": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-redirect.sql.bz2',
-    "2018 Category": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-category.sql.bz2',
+    # "2018 Pagelinks": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-pagelinks.sql.bz2',
+    # "2018 Categorylinks": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-categorylinks.sql.bz2',
+    # "2018 Page": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-page.sql.bz2',
+    # "2018 Redirect": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-redirect.sql.bz2',
+    # "2018 Category": '/home/gyde/Documents/bzsets/20180920/enwiki-20180920-category.sql.bz2',
     "2024 Pagelinks": '/home/gyde/Documents/bzsets/20240620/enwiki-20240620-pagelinks.sql.bz2',
     "2024 Categorylinks": '/home/gyde/Documents/bzsets/20240620/enwiki-20240620-categorylinks.sql.bz2',
     "2024 Page": '/home/gyde/Documents/bzsets/20240620/enwiki-20240620-page.sql.bz2',
